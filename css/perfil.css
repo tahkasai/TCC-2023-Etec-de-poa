@@ -1,0 +1,83 @@
+:root{
+    --color-1: black;
+    --color-2: white;
+    --color-3: #97bdda; /* mais escura */
+    --color-4: #BBD7EC; /* padrao */
+    --color-5: #dce6ed; /* mais clara */
+}
+.container_perfil{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.card{
+    width:70%;
+    height:73vh;
+    box-shadow:0px 25px 40px rgba(113, 105, 105, 0.324);
+    border-radius:10px;
+    overflow:hidden;
+}
+.card .info{
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    background-color: var(--color-3);
+    position: relative;
+}
+.card .info button{
+    font-size: 1rem;
+    padding: 3px;
+    height:30px;
+    width:80px;
+    border:none;
+    color: var(--color-1);
+    border-radius:4px;
+    background-color:  var(--color-4);
+    cursor:pointer;
+    border-radius: 50px;
+}
+.card .forms{
+    padding:15px;
+}
+.card .inputs{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:10px;
+}
+.info span {
+  font-size: 1.4rem;
+}
+.card .inputs span{
+    font-size:15px;
+    color: var(--color-1);
+    padding: 5px;
+}
+.card .inputs input{
+    border-radius: 20px;
+    background-color: transparent;
+    height:50px;
+    font-size:1.1rem;
+    padding: 0 10px;
+}
+.card .inputs input[type="text"][readonly]{
+    border: 1px solid rgba(0,0,0,0);
+}
+.card .inputs input[type="password"][readonly]{
+    border: 1px solid rgba(0,0,0,0);
+}
+.card .inputs input[type="int"][readonly]{
+    border: 1px solid rgba(0,0,0,0);
+}
+.excluirconta{  
+    margin-left: 15px;
+    font-size: 1rem;
+    padding: 3px;
+    height:30px;
+    width:150px;
+    border:none;
+    color: var(--color-1);
+    border-radius:4px;
+    background-color:  rgb(255, 81, 81);
+    cursor:pointer;
+    border-radius: 50px;
+}

@@ -1,0 +1,133 @@
+:root{
+    --color-1: black;
+    --color-2: white;
+    --color-3: #97bdda; /* mais escura */
+    --color-4: #BBD7EC; /* padrao */
+    --color-5: #dce6ed; /* mais clara */
+}
+.justify-content-home{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.justify-content-home img{
+    width: 400px;
+    padding-right: 40px;
+    border-radius: 150px 0 150px 0;
+}
+.justify-content-home p{
+    padding-right: 35px;
+}
+
+/* informações sobre porcentagens */
+.porc-card{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.porc-card:hover > :not(:hover){
+    opacity: .5;
+    transform: scale(0.9);
+}
+.porc-article{
+    width: 31%;
+    height: 270px;
+    border: 2px solid var(--color-3);
+    border-radius: 25px;
+    transition: .35s;
+    cursor: pointer;
+}
+.porc-article i{
+    display: block;
+    font-size: 2rem;
+    color: var(--color-1);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.porc-titulo{
+    margin-bottom: 2rem;
+}
+.porc-descricao{
+    font-size:16px;
+}
+/*Avaliações*/
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.testimonial {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+}
+.testimonial .image {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonial .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 100%;
+    width: 100%;
+}
+.slide p {
+    text-align: center;
+    padding: 0 130px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-1);
+}
+.slide .quote-icon {
+    font-size: 30px;
+    color: #4070f4;
+}
+.slide .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-1);
+}
+.details .job {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-1);
+}
+/* swiper button css */
+.nav-btn {
+    height: 30px;
+    width: 30px;
+    transform: translateY(30px);
+    transition: 0.2s;
+}
+.nav-btn::after,.nav-btn::before {
+    font-size: 20px;
+    color: #4070f4;
+}
+.swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--color-3);
+}
+@media screen and (max-width: 768px) {
+    .slide p {
+      padding: 0 20px;
+    }
+    .nav-btn {
+      display: none;
+    }
+}
+  

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura da Paz</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!-- MENU -->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="../index.html">Cultura da Paz</a></div>
+            <ul class="links">
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../pagepalestrante.html">Palestrantes</a></li>
+                <li><a href="../agenda.html">Agendamento</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+                <a href="../logincadastro.html" class="action_btn">Login</a>
+            </ul>
+            <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="dropdown_menu">
+            <ul class="links">
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../pagepalestrante.html">Palestrantes</a></li>
+                <li><a href="../agenda.html">Agendamento</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+                <li><a href="../logincadastro.html" class="action_btn">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDwnMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function(){
+            dropDwnMenu.classList.toggle('open')
+            const isOpen = dropDwnMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen 
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+        <!-- WAVES FUNDO E BANNER-->
+        <div class="wave-header" id="fundo-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-baixo" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L1440,256L1440,320L0,320Z"></path></svg>
+            <div class="search_form">
+                <h1>Bullying no Brasil</h1>
+                <div class="by-data">
+                    <div class="data-artigo">
+                        <p><span>04</span>-<span>11</span>-<span>2023</span></p>
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+
+        <!-- Artigo do Blog -->
+        
+        <div class="espacamento">
+            <div class="artigo-texto">
+                <div class="paragrafo-artigo">
+                    <h2>Crescimento do bullying no Brasil</h2><br>
+                    <p>Se há algo que não podemos ignorar, é o crescente desafio que o bullying representa para a saúde mental e emocional de nossos jovens no Brasil. Recentemente, o Instituto Brasileiro de Geografia e Estatística (IBGE) divulgou dados que nos fazem refletir sobre a urgência de abordar esse problema de frente. <br><br>
+
+                    <b>40% dos Alunos: Uma Realidade Dolorosa</b><br><br>
+                    De acordo com o IBGE, a taxa de alunos que já sofreram bullying atingiu a marca de 40%, uma ascensão considerável em comparação aos 30,9% registrados em 2009. Isso não é apenas uma estatística; é um sinal alarmante de que algo está errado em nossas escolas e comunidades.<br> Mas o impacto vai além dos corredores das instituições educacionais. A pesquisa revela que 24% dos estudantes relatam que a vida não vale a pena, uma resposta devastadora que ilustra as consequências emocionais profundas desse fenômeno. <br><br>
+
+                    <b>São Paulo: Uma Cidade Marcada pela Dor</b><br><br>
+                    Os números tornam-se ainda mais gritantes quando focamos em São Paulo. A pesquisa do IBGE aponta que 38% dos adolescentes da cidade já foram vítimas de bullying. Isso significa que uma parcela significativa da juventude paulistana está enfrentando um desafio que vai além dos livros e das salas de aula. <br><br>
+
+                    <b>O Grito Silencioso: Suicídio Entre as Vítimas de Bullying</b><br><br>
+                    O bullying não é apenas um problema de convívio social; é um fator de risco para problemas mais sérios. Alarmantemente, 1 em cada 5 crianças que sofrem bullying chega a ponderar o suicídio. Essa estatística chocante é um chamado à ação urgente. Não podemos permitir que nossas crianças se sintam tão desamparadas a ponto de considerar tirar suas próprias vidas. <br><br>
+
+                    <b> Redes Sociais: O Novo Campo de Batalha</b><br><br>
+                    Em uma era digital, as redes sociais também se tornaram um terreno fértil para o bullying. O IBGE revela que um em cada dez estudantes já foi ofendido online. É hora de repensarmos o papel das plataformas digitais na vida de nossos jovens e implementar medidas eficazes para combater o cyberbullying. <br><br>
+
+                    <h2>Juntos Podemos Mudar essa Narrativa</h2><br>
+                    Diante desses dados preocupantes, não podemos ficar de braços cruzados. É necessário um esforço conjunto da sociedade, instituições educacionais e autoridades para reverter essa tendência. Programas de conscientização, apoio emocional e medidas eficazes de prevenção do bullying devem se tornar prioridades em nossas escolas e comunidades.  <br>Se queremos construir um futuro saudável para nossas crianças e adolescentes, é hora de nos unirmos contra o bullying, oferecendo-lhes um ambiente seguro, inclusivo e empático. Vamos transformar essas estatísticas alarmantes em uma história de superação e resiliência. Juntos, podemos fazer a diferença. <br><br><br><br>
+                    Fontes: <a href="https://veja.abril.com.br/saude/alerta-1-em-cada-5-criancas-pensa-em-suicidio-por-causa-do-bullying
+                    https://valor.globo.com/brasil/noticia/2022/07/13/ibge-40-pontos-percentuais-dos-alunos-j-sofreram-bullying-e-24-dizem-que-vida-no-vale-a-pena.ghtmlhttps://www.em.com.br/app/noticia/saude-e-bem-viver/2023/04/08/interna_bem_viver,1478999/bullying-40-dos-estudantes-adolescentes-admitem-ter-sofrido-a-pratica.shtml#google_vignette
+                    " style="color: #4a89b9;"> Veja</a> e <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2021-09/ibge-um-em-cada-dez-estudantes-ja-foi-ofendido-nas-redes-sociais" style="color: #4a89b9;">Agência Brasil</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br><br>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="../image/logo.png" alt="logo" id="logo" />
+                <p>Juntos pela cultura da paz </p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/juntospelaculturadapaz/" id="instagram" class="footer-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5511979625033" id="whatsapp"  class="footer-link">
+                        <i class="fa-brands fa-whatsapp" ></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Fotos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Vídeos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Podcasts</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Ajuda</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Chat</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Contatos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dúvidas</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Inscreva-se</h3>
+                <p>
+                    Digite seu E-mail para ser notificado sobre nossos trabalhos.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

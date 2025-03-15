@@ -1,0 +1,323 @@
+:root{
+    --color-1: black;
+    --color-2: white;
+    --color-3: #97bdda; /* mais escura */
+    --color-4: #BBD7EC; /* padrao */
+    --color-5: #dce6ed; /* mais clara */
+ 
+    --bg-color: #f1f1fb;
+}
+#info-circle{
+    border-radius: 20px;
+    color: #042c4a;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    font-size: 40px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+.janela-modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #070d3583;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.janela-modal.abrir{
+    display: flex;
+}
+.fechar{
+    cursor: pointer;
+    font-size: 23px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-3);
+    border: none;
+    border-radius: 50%;
+}
+@keyframes abrirmodal {
+    from {
+        opacity: 0;
+        transform: translate3d(0,-20px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+.abrir .modal {
+    animation: abrirmodal 0.5s;
+}
+.modal{
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: var(--color-2);
+    border-radius: 20px;
+    padding: 40px;
+}
+.img-modal{
+    width: 400px;
+    height: auto;
+}
+.info {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*MARCAR E CONSULTAR AGENDA*/
+.content-agenda{
+    margin-left: 5%;
+    width: 90%;
+}
+.content-agendamento{
+    width: 95%;
+    height: 80vh;
+    overflow-y: auto;
+}
+.con-agenda{
+    display: flex;
+}
+.novaagenda{
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    margin: 30px 10px;
+    background-color: var(--color-4);
+    width: 240px;
+    height: 270px;
+}
+.novaagenda:hover{
+    background-color: #a7c7df;
+}
+.agenda {
+    position: relative;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 30px 10px;
+    background-color: var(--bg-color);
+    width: 240px;
+    height: 270px;
+}
+.agenda p{
+    padding: 3px 0;
+}
+.action_btn_vjm {
+    position: absolute;
+    bottom: 20px;
+    padding: 6px 60px;
+    color: var(--color-2);
+    background: var(--color-1);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+.tooltip {
+    visibility: hidden;
+    width: 150px;
+    background-color: var(--color-1);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+/*CALENDARIO*/
+.calendar {
+    top: 0;
+    width: 100%;
+    height: 530px;
+    max-width: 600px;
+    background: var(--bg-color);
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.calendar .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+.calendar .header .month {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-1);
+}
+.calendar .header .btns {
+    display: flex;
+    gap: 10px;
+}
+.calendar .header .btns .btn {
+    width: 50px;
+    height: 40px;
+    background: var(--color-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.calendar .header .btns .btn:hover {
+    background: #6d98b8;
+    transform: scale(1.05);
+}
+.calendar .weekdays {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.calendar .weekdays .day {
+    width: calc(100% / 7 - 10px);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.calendar .days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.calendar .days .day {
+    width: calc(100% / 7 - 10px);
+    height: 50px;
+    background: var(--color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    transition: all 0.3s;
+    user-select: none;
+}
+.calendar .days .day:not(.next):not(.prev):hover {
+    color: var(--color-2);
+    background: var(--color-3);
+    transform: scale(1.05);
+}
+.calendar .days .day.next,.calendar .days .day.prev {
+    color: #ccc;
+}
+.calendar .days .day.today {
+    color: var(--color-2);
+    background:#6d98b8;
+}
+
+/*SELECIONAR INFORMAÇÕES*/
+.info-escolhedia{
+    margin-right: 20px;
+    border-radius: 20px;
+    text-align: left;
+    width: 40%;
+    height: auto;
+    background-color: var(--bg-color);
+}
+.cbc-info{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 15px 20px;
+    width: 100%;
+    background-color:var(--color-3);
+}
+.cbc-info p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.form-agenda{
+    padding: 20px;
+}
+.form-agenda span{
+    font-size: 12px;
+}
+.form-agenda textarea{
+    resize: none;
+    height: 60px;
+}
+.form-input-submit{
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--color-4);
+    border: none;
+}
+.form-agenda-input{
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: var(--color-2);
+    border: 1px solid var(--color-3);
+    border-radius: 15px;
+}
+.descricao {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/*AGENDA ADM*/
+.box-dias-agend{
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 50px;
+    width: 80vh;
+    height: 530px;
+    background-color: var(--color-5);
+}
+.box-dias-agend h1{
+    font-size: 25px;
+    padding-left: 5px;
+}
+.box-dias{
+    margin-bottom: 10px;
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--bg-color);
+}
+.box-dias p{
+    font-size: 15px;
+    color: #0a4776;
+}
+.box-dias h2{
+    padding-top: 5px;
+    font-size: 25px;
+}
+.box-dias h2:hover{
+    color: #042c4a;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura da Paz</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!-- MENU -->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="../index.html">Cultura da Paz</a></div>
+            <ul class="links">
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../pagepalestrante.html">Palestrantes</a></li>
+                <li><a href="../agenda.html">Agendamento</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+                <a href="../logincadastro.html" class="action_btn">Login</a>
+            </ul>
+            <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="dropdown_menu">
+            <ul class="links">
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../pagepalestrante.html">Palestrantes</a></li>
+                <li><a href="../agenda.html">Agendamento</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+                <li><a href="../logincadastro.html" class="action_btn">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDwnMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function(){
+            dropDwnMenu.classList.toggle('open')
+            const isOpen = dropDwnMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen 
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+        <!-- WAVES FUNDO E BANNER-->
+        <div class="wave-header" id="fundo-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-baixo" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L1440,256L1440,320L0,320Z"></path></svg>
+            <div class="search_form">
+                <h1>Brasil precisa avançar em leis e políticas públicas <br> contra bullying, diz especialista</h1><br>
+                
+                <div class="by-data">
+                    <div class="data-artigo">
+                        <p><span>16</span>-<span>09</span>-<span>2023</span></p>
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+
+        <!-- Artigo do Blog -->
+        
+        <div class="espacamento">
+            <div class="artigo-texto">
+                <div class="paragrafo-artigo">
+                    <div>
+                        <p><b>Bullying!</b> Termo em inglês para uma prática repetitiva de atos de violência física e psicológica contra as pessoas. Intimidação, humilhação, xingamentos e agressão física, individualmente ou em grupo. <br><br> O Brasil precisa avançar e muito em políticas públicas e principalmente na legislação para evitar este tipo de prática. <br><br> Para Juliano Melo Duarte, advogado especialista em direito antibullying e cyberbullying e presidente da comissão de direito antibullying da OAB de Mogi das Cruzes(SP), a data precisa ser lembrada e divulgada. <br><br> E deve servir para alertar e conscientizar a população sobre os impactos da intimidação sistemática, de suas consequências, desdobramentos e do respeito às diversidades. <br><br> “Essa intimidação sistemática é um problema que atinge não somente crianças e adolescentes em escolas, mas toda a sociedade” afirma. <br><br> Segundo uma pesquisa realizada pelo Fundo das Nações Unidas para a Infância (Unicef) pouco antes da pandemia, um em cada três jovens em 30 países disse ter sido vítima de cyberbullying, que é o bullying por meio da Internet, e um em cada cinco relata ter saído da escola. Ainda segundo o Unicef, no Brasil, 37% afirmaram já terem sido vítimas de cyberbullying. As redes sociais foram apontadas como o espaço online em que mais ocorrem casos de violência entre jovens no país.<br><br> Além disso, 36% dos adolescentes brasileiros informaram já terem faltado à escola após ter sofrido bullying online de colegas de classe, tornando o Brasil o país com a maior porcentagem nesse quesito na pesquisa. Para acabar com o bullying online e a violência dentro e no entorno das escolas, o Unicef e seus parceiros pedem ações urgentes de todos os setores para: </p><br><br>
+                        <ul style="padding-left: 30px;">
+                            <li><p>Implementação de políticas para proteger crianças e jovens de cyberbullying e bullying;</p></li>
+                            <li><p>Estabelecimento e equipamento de linhas de apoio nacionais para apoiar crianças e jovens;</p></li>
+                            <li><p>Avanço de padrões e práticas éticas dos provedores de redes sociais, especificamente no que diz respeito a coleta, informação e gerenciamento de dados;</p></li>
+                            <li><p>Coleta de evidências melhores e desagregadas sobre o comportamento online de crianças e jovens para informar políticas e orientações;</p></li>
+                        </ul><br><br>
+                        <p>Treinamento de professores e pais para prevenir e responder ao cyberbullying e ao bullying, principalmente para grupos vulneráveis. “A punição severa deve ser aplicada somente  em último caso, com análise criteriosa do ocorrido, já que a própria  Lei Federal 13.185/15 deixa claro em um dos seus objetivos que a ideia do programa de combate à intimidação sistemática é evitar, tanto quanto possível, a punição dos agressores, privilegiando mecanismos e instrumentos alternativos que promovam a efetiva responsabilização e a mudança de comportamento hostil, buscando-se a promoção da cultura da paz”, destaca Juliano.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br><br>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="../image/logo.png" alt="logo" id="logo" />
+                <p>Juntos pela cultura da paz </p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/juntospelaculturadapaz/" id="instagram" class="footer-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5511979625033" id="whatsapp"  class="footer-link">
+                        <i class="fa-brands fa-whatsapp" ></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Fotos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Vídeos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Podcasts</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Ajuda</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Chat</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Contatos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dúvidas</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Inscreva-se</h3>
+                <p>
+                    Digite seu E-mail para ser notificado sobre nossos trabalhos.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

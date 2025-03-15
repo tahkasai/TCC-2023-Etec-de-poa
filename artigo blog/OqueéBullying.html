@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura da Paz</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="../index.html">Cultura da Paz</a></div>
+            <ul class="links">
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../pagepalestrante.html">Palestrantes</a></li>
+                <li><a href="../agenda.html">Agendamento</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+                <a href="../logincadastro.html" class="action_btn">Login</a>
+            </ul>
+            <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="dropdown_menu">
+            <ul class="links">
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../pagepalestrante.html">Palestrantes</a></li>
+                <li><a href="../agenda.html">Agendamento</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+                <li><a href="../logincadastro.html" class="action_btn">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDwnMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function(){
+            dropDwnMenu.classList.toggle('open')
+            const isOpen = dropDwnMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen 
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+        <!-- WAVES FUNDO E BANNER-->
+        <div class="wave-header" id="fundo-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-baixo" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L1440,256L1440,320L0,320Z"></path></svg>
+            <div class="search_form">
+                <h1>O que é Bullying?</h1>
+                <div class="by-data">
+                    <div class="data-artigo">
+                        <p><span>12</span>-<span>11</span>-<span>2023</span></p>
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+
+        <!-- Artigo do Blog -->
+        
+        <div class="espacamento">
+            <div class="artigo-texto">
+                <div class="paragrafo-artigo">
+                    <p>A importância de combater o bullying ocorre principalmente pela crescente discussão nas escolas brasileiras e na sociedade.  A palavra bullying é uma expressão de origem estrangeira que pode ser traduzida como “brigão” ou “valentão”. Ela foi denominada na legislação do Brasil como “Intimidação Sistemática”. Cumpre salientar que a <b>Lei 13.185/2015</b>, de 6 de novembro de 2015, que institui o Programa de Combate à Intimidação Sistemática (Bullying), foi um importante passo do Poder Legislativo no combate ao bullying. <br><br> No contexto e para os fins desta Lei, considera-se bullying todo ato de violência física ou psicológica, intencional e repetitivo que ocorre sem motivação evidente, praticado por indivíduo ou grupo, contra uma ou mais pessoas, com o objetivo de intimidá-la ou agredi-la, causando dor e angústia à vítima, em uma relação de desequilíbrio de poder entre as partes envolvidas. <br><br> Segundo o artigo 2º da lei em comento, o  bullying é caracterizado quando há violência física ou psicológica em atos de intimidação, humilhação ou discriminação e, ainda: ataques físicos, insultos pessoais, comentários sistemáticos e apelidos pejorativos, ameaças por quaisquer meios, grafites depreciativos, expressões preconceituosas, isolamento social consciente e premeditado e pilhérias (piadas).
+                    <br><br>
+                    <h2>Tipos de bullying</h2>
+                    <br><b>I –</b> verbal: insultar, xingar e apelidado pejorativamente; <br><br>
+                    <b>II –</b> moral: difamar, caluniar, disseminar rumores;<br><br>
+                    <b> III –</b> sexual: assediar, induzir e/ou abusar;<br><br>
+                    <b>IV –</b> social: ignorar, isolar e excluir;<br><br>
+                    <b>V –</b> psicológica: perseguir, amedrontar, aterrorizar, intimidar, dominar, manipular, chantagear e infernizar;<br><br>
+                    <b>VI –</b> físico: socar, chutar, bater;<br><br> 
+                    <b>VII -</b> material: furtar, roubar, destruir pertences de outrem;<br><br>
+                    <b>VIII –</b> virtual: depreciar, enviar mensagens intrusivas da intimidade, enviar ou adulterar fotos e dados pessoais que resultem em sofrimento ou com o intuito de criar meios de constrangimento psicológico e social.<br><br><br><br>
+                    fontes: <a href="https://blog.descobrindocriancas.com.br/2022/03/29/a-importancia-do-combate-ao-bullying/" style="color: #4a89b9;">Descobrindo crianças</a>, <a href="https://www.significados.com.br/bullying/" style="color: #4a89b9;">Significados</a> e <a href="https://cipave.rs.gov.br/os-tipos-de-bullying" style="color: #4a89b9;">CIPAVE</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br><br>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="../image/logo.png" alt="logo" id="logo" />
+                <p>Juntos pela cultura da paz </p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/juntospelaculturadapaz/" id="instagram" class="footer-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5511979625033" id="whatsapp"  class="footer-link">
+                        <i class="fa-brands fa-whatsapp" ></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Fotos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Vídeos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Podcasts</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Ajuda</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Chat</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Contatos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dúvidas</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Inscreva-se</h3>
+                <p>
+                    Digite seu E-mail para ser notificado sobre nossos trabalhos.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
